@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>南中高度（夏至）</title>
+<style>
+  body {
+    background: white;
+    font-family: sans-serif;
+  }
+  #controls {
+    margin: 10px;
+  }
+  #controls button {
+    margin-left: 6px;
+  }
+  canvas {
+    border: 1px solid #aaa;
+    margin: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div id="controls">
+  緯度 α（北緯）：
+  <input type="range" id="lat" min="0" max="90" step="1" value="34">
+  <span id="latValue">34°</span>
+
+
+
+  <!-- ヒントボタン -->
+  <button id="hint1">ヒント①</button>
+<button id="hint2" disabled>ヒント②</button>
+<button id="hint3" disabled>ヒント③</button>
+<button id="hint4" disabled>ヒント④</button>
+
+
+<button id="reset">最初にもどる</button>
+
+
+</div>
+
+<canvas id="canvas" width="600" height="600"></canvas>
+
+<script src="main.js"></script>
+</body>
+</html>
